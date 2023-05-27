@@ -1,0 +1,372 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url('../fonts/Ubuntu/Ubuntu-Regular.ttf');
+}
+
+*
+{
+    box-sizing: border-box;
+    font-family: Ubuntu;
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    background: #101527;
+    scroll-behavior: smooth;
+}
+
+.button_up
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: -80px;
+    right: -80px;
+    width: 80px;
+    height: 80px;
+    background: #5821F8;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: background .5s, backdrop-filter .5s, box-shadow .5s, right .5s, bottom .5s;
+    user-select: none;
+    z-index: 99;
+}
+
+.button_up_show
+{
+    bottom: 40px;
+    right: 40px;
+}
+
+.button_up__img
+{
+    transition:transform .5s;
+}
+
+.button_up:hover
+{
+    background: #FFFFFF40;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 0 2px inset #FFFFFF;
+}
+
+.button_up:hover .button_up__img
+{
+    transform: rotate(45deg);
+}
+
+.header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header__logo
+{
+    user-select: none;
+}
+
+.header__menu
+{
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+}
+
+.header__menu__item
+{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #979FBD;
+    text-decoration: none;
+    transition: color .5s;
+}
+
+.header__menu__item:hover
+{
+    color: #FFFFFF;
+}
+
+.home_wrapper
+{
+    background: linear-gradient(102.97deg, rgba(88, 33, 248, 0.46) 0%, rgba(124, 38, 241, 0.46) 50%, rgba(240, 55, 218, 0.46) 100%), linear-gradient(0deg, rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)), url(../img/background/home_img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.home
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 128px 64px;
+    gap: 48px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.home__title
+{
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.home__subtitle
+{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #979FBD;
+}
+
+.home__button
+{
+    padding: 24px 48px;
+    background: #5821F8;
+    border-radius: 8px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background .5s, backdrop-filter .5s, box-shadow .5s;
+    user-select: none;
+}
+
+.home__button:hover
+{
+    background: #FFFFFF40;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 0 2px inset #FFFFFF;
+}
+
+.our_entertainment
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 40px;
+    gap: 48px;
+    width: 100%;
+}
+
+.our_entertainment__title
+{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.our_entertainment__cards
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.our_entertainment__cards__card
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    gap: 20px;
+    width: 360px;
+    background: #282E47;
+}
+
+.our_entertainment__cards__card__img
+{
+    height: 96px;
+    user-select: none;
+}
+
+.our_entertainment__cards__card__title
+{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.our_entertainment__cards__card__subtitle
+{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #979FBD;
+}
+
+.to_book_wrapper
+{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.62), rgba(0, 0, 0, 0.62)), url(../img/background/to_book_img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.to_book
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 96px 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.to_book__form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 480px;
+}
+
+.to_book__form__title
+{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.to_book__form__subtitle
+{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #979FBD;
+}
+
+.to_book__form__input,
+.to_book__form__select
+{
+    padding: 24px;
+    width: 100%;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 0 0 2px inset #979FBD;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #979FBD;
+    backdrop-filter: blur(16px);
+    outline: none;
+}
+
+.to_book__form__select::-ms-expand
+{
+    display: none;
+}
+
+.to_book__form__select
+{
+    outline: none;
+    appearance: none;
+}
+
+.to_book__form__select_block
+{
+    width: 100%;
+    cursor: pointer;
+    display: grid;
+    grid-template-areas: "select";
+    align-items: center;
+}
+
+.to_book__form__select_block::after
+{
+    content: "";
+    width: 0.8em;
+    height: 0.5em;
+    background-color: #979FBD;
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    justify-self: end;
+    margin-right: 24px;
+}
+  
+.to_book__form__select,
+.to_book__form__select_block:after
+{
+    grid-area: select;
+}
+
+.to_book__form__input:hover,
+.to_book__form__select:hover
+{
+    background: #FFFFFF40;
+}
+
+.to_book__form__button
+{
+    padding: 24px 0px;
+    width: 100%;
+    background: #5821F8;
+    border-radius: 8px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background .5s, backdrop-filter .5s, box-shadow .5s;
+}
+
+.to_book__form__button:hover
+{
+    background: #FFFFFF40;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 0 2px inset #FFFFFF;
+}
+
+.footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer__logo
+{
+    user-select: none;
+}
+
+.footer__copyright
+{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: right;
+    color: #979FBD;
+}

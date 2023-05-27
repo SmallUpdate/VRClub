@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VR Club</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+</head>
+<body>
+    <div class="button_up"><img src="img/button_up.svg" class="button_up__img" alt=""></div>
+    <div class="header">
+        <img src="img/logo.svg" class="header__logo" alt="logo">
+        <div class="header__menu">
+            <a href="#home" class="header__menu__item">Главная</a>
+            <a href="#our_entertainment" class="header__menu__item">Наши развлечения</a>
+            <a href="#to_book" class="header__menu__item">Заказать</a>
+        </div>
+    </div>
+    <div class="home_wrapper">
+        <div class="home" id="home">
+            <div class="home__title">VR Club Йошкар-Ола</div>
+            <div class="home__subtitle">Игровой центр в Йошкар-Оле, где мы собрали сразу 10 развлечений в одном месте! Виртуальная реальность, игровые приставки, Гитар Хиро, а ещё — яркие праздники и Дни рождения</div>
+            <a href="#to_book"><button class="home__button">Заказать</button></a>
+        </div>
+    </div>
+    <div class="our_entertainment" id="our_entertainment">
+        <div class="our_entertainment__title">Наши развлечения</div>
+        <div class="our_entertainment__cards">
+            <div class="our_entertainment__cards__card">
+                <img src="img/cards/card1.svg" class="our_entertainment__cards__card__img" alt="">
+                <div class="our_entertainment__cards__card__title">Sony PlayStation</div>
+                <div class="our_entertainment__cards__card__subtitle">В нашей коллекции на PS5 и PS4 Pro ты найдешь больше 150 крутых игр на любой вкус. Играй в топовые эксклюзивы или кооперативные игры с друзьями до 4-6 человек на больших экранах в 4К разрешении.</div>
+            </div>
+            <div class="our_entertainment__cards__card">
+                <img src="img/cards/card2.svg" class="our_entertainment__cards__card__img" alt="">
+                <div class="our_entertainment__cards__card__title">X-box</div>
+                <div class="our_entertainment__cards__card__subtitle">Хочешь поиграть в Кирове на приставке Xbox? Она у нас есть — как и подписка на сервис Game Pass, где тебя ждут больше 100 различных игр.</div>
+            </div>
+            <div class="our_entertainment__cards__card">
+                <img src="img/cards/card3.svg" class="our_entertainment__cards__card__img" alt="">
+                <div class="our_entertainment__cards__card__title">Виртуальная реальность</div>
+                <div class="our_entertainment__cards__card__subtitle">А хочешь не просто играть в игру, а стать ее полноценным героем? С виртуальной реальностью это просто. Надевай шлем - и мы перенесем тебя в другие миры!</div>
+            </div>
+            <div class="our_entertainment__cards__card">
+                <img src="img/cards/card4.svg" class="our_entertainment__cards__card__img" alt="">
+                <div class="our_entertainment__cards__card__title">Just Dance</div>
+                <div class="our_entertainment__cards__card__subtitle">Танцевальный симулятор современности Just Dance подарит тебе невероятные эмоции - и отлично развеселит всех гостей. Тебя ждут больше 500 зажигательных песен.</div>
+            </div>
+            <div class="our_entertainment__cards__card">
+                <img src="img/cards/card5.svg" class="our_entertainment__cards__card__img" alt="">
+                <div class="our_entertainment__cards__card__title">Nintendo Switch</div>
+                <div class="our_entertainment__cards__card__subtitle">Нинтендо Свитч — это уникальная игровая консоль. Инновационные контроллеры Joi-Con, топовые экслюзивы вроде The Legend of Zelda и Super Mario Odyssey ждут тебя в нашем клубе!</div>
+            </div>
+            <div class="our_entertainment__cards__card">
+                <img src="img/cards/card6.svg" class="our_entertainment__cards__card__img" alt="">
+                <div class="our_entertainment__cards__card__title">Гитар Хиро</div>
+                <div class="our_entertainment__cards__card__subtitle">Хочешь стать настоящим музыкантом и сыграть на виртуальной сцене? У нас есть полный комплект для игры в Гитар Хиро и Rock Band: игровые гитары, барабанная установка и микрофон для вокалиста!</div>
+            </div>
+        </div>
+    </div>
+    <div class="to_book_wrapper">
+        <div class="to_book" id="to_book">
+            <form class="to_book__form" method="get">
+                <div class="to_book__form__title">Заказать</div>
+                <div class="to_book__form__subtitle">Заполните форму заявки и организатор свяжется с вами в течение дня.</div>
+                <input type="text" placeholder="Имя" name="name" required="required" class="to_book__form__input">
+                <input type="email" placeholder="Email" name="email" required="required" class="to_book__form__input">
+                <input type="tel" placeholder="Телефон" name="telephone" required="required" class="to_book__form__input">
+                <div class="to_book__form__select_block">
+                    <select name="entertainment" id="entertainment" class="to_book__form__select">
+                        <option value="0">Развлечение</option>
+                        <option value="1">Sony PlayStation</option>
+                        <option value="2">X-box</option>
+                        <option value="3">Виртуальная реальность</option>
+                        <option value="4">Just Dance</option>
+                        <option value="5">Nintendo Switch</option>
+                        <option value="6">Гитар Хиро</option>
+                    </select>
+                </div>
+                <input type="submit" value="Заказать" class="to_book__form__button">
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <img src="img/logo.svg" class="footer__logo" alt="">
+        <div class="footer__copyright">© 2023, Все права защищены</div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
