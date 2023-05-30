@@ -14,20 +14,20 @@ window.addEventListener('scroll', function() {
 
 const hamburger = document.querySelector('.header__hamburger');
 const menu = document.querySelector('.header__menu');
-const header = document.querySelector('.header');
+const body = document.querySelector('body');
 const item = document.querySelectorAll('.header__menu__item');
 
 hamburger.addEventListener('mousedown', function() {
     hamburger.classList.toggle('header__hamburger_active');
     menu.classList.toggle('header__menu_show');
-    header.classList.toggle('header_fixed');
+    body.classList.toggle('body_overflow');
 });
 
 for (var i = 0; i < item.length; i++) {
     item[i].addEventListener('click', function() {
         hamburger.classList.remove('header__hamburger_active');
         menu.classList.remove('header__menu_show');
-        header.classList.remove('header_fixed');
+        body.classList.remove('body_overflow');
     });
 }
 

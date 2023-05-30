@@ -30,6 +30,11 @@
 
 @media (max-width: 768px)
 {
+    .body_overflow
+    {
+        overflow: hidden;
+    }
+
     .header__menu
     {
         display: flex;
