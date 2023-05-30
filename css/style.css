@@ -17,16 +17,6 @@ html
     scroll-behavior: smooth;
 }
 
-body
-{
-    overflow-x: hidden;
-}
-
-.body_overflow
-{
-    overflow: hidden;
-}
-
 .button_up
 {
     display: flex;
@@ -42,7 +32,7 @@ body
     cursor: pointer;
     transition: background .5s, backdrop-filter .5s, box-shadow .5s, right .5s, bottom .5s;
     user-select: none;
-    z-index: 98;
+    z-index: 97;
 }
 
 .button_up_show
@@ -78,6 +68,12 @@ body
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    z-index: 98;
+}
+
+.header_fixed
+{
+    position: fixed;
 }
 
 .header__logo
@@ -91,7 +87,6 @@ body
     display: flex;
     flex-direction: row;
     gap: 64px;
-    z-index: 98;
 }
 
 .header__menu__item
