@@ -34,3 +34,18 @@ function toggleMenu() {
 }
 
 document.querySelector('body').classList.add('loaded');
+
+const dropdown_button = document.querySelector('.to_book__dropdown_button');
+const dropdown_list = document.querySelector('.to_book__dropdown_list');
+const dropdown_list_item = document.querySelectorAll('.to_book__dropdown_list__item');
+
+dropdown_button.addEventListener('mousedown', function() {
+    dropdown_list.classList.toggle('to_book__dropdown_list_show');
+})
+
+dropdown_list_item.forEach(function (listItem) {
+    listItem.addEventListener('click', function() {
+        dropdown_button.innerHTML = this.innerHTML;
+        dropdown_list.classList.toggle('to_book__dropdown_list_show');
+    })
+})

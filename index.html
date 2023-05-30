@@ -7,6 +7,7 @@
     <title>VR Club</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="css/animation.css">
 </head>
 <body>
     <div class="button_up"><img src="img/button_up.svg" class="button_up__img" alt=""></div>
@@ -73,17 +74,15 @@
                 <input type="text" placeholder="Имя" name="name" required="required" class="to_book__form__input">
                 <input type="email" placeholder="Email" name="email" required="required" class="to_book__form__input">
                 <input type="tel" placeholder="Телефон" name="telephone" required="required" class="to_book__form__input">
-                <div class="to_book__form__select_block">
-                    <select name="entertainment" id="entertainment" class="to_book__form__select">
-                        <option value="0">Развлечение</option>
-                        <option value="1">Sony PlayStation</option>
-                        <option value="2">X-box</option>
-                        <option value="3">Виртуальная реальность</option>
-                        <option value="4">Just Dance</option>
-                        <option value="5">Nintendo Switch</option>
-                        <option value="6">Гитар Хиро</option>
-                    </select>
-                </div>
+                <div class="to_book__dropdown_button">Развлечение</div>
+                <ul class="to_book__dropdown_list">
+                    <li class="to_book__dropdown_list__item">Sony PlayStation</li>
+                    <li class="to_book__dropdown_list__item">X-box</li>
+                    <li class="to_book__dropdown_list__item">Виртуальная реальность</li>
+                    <li class="to_book__dropdown_list__item">Just Dance<</li>
+                    <li class="to_book__dropdown_list__item">Nintendo Switch</li>
+                    <li class="to_book__dropdown_list__item">Гитар Хиро</li>
+                </ul>
                 <input type="submit" value="Заказать" class="to_book__form__button">
             </form>
         </div>

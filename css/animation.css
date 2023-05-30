@@ -1,0 +1,99 @@
+.header__menu__item
+{
+    transition: color .5s;;
+}
+
+.header__menu__item:hover
+{
+    color: #FFFFFF;
+}
+
+.home__button
+{
+    transition: background .5s, backdrop-filter .5s, box-shadow .5s;
+}
+
+.home__button:hover
+{
+    background: #FFFFFF40;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 0 2px inset #FFFFFF;
+}
+
+.to_book__form__input,
+.to_book__dropdown_button
+{
+    transition: background .5s;
+}
+
+.to_book__form__input:hover,
+.to_book__dropdown_button:hover
+{
+    background: #FFFFFF40;
+}
+
+.to_book__dropdown_list__item
+{
+    transition: color .5s;
+}
+
+.to_book__dropdown_list__item:hover
+{
+    color: #FFFFFF;
+}
+
+.to_book__form__button
+{
+    transition: background .5s, backdrop-filter .5s, box-shadow .5s;
+}
+
+.to_book__form__button:hover
+{
+    background: #FFFFFF40;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 0 2px inset #FFFFFF;
+}
+
+.header,
+.home_wrapper,
+.our_entertainment,
+.to_book_wrapper,
+.footer
+{
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.header
+{
+    transition-delay: 1s;
+}
+
+.home_wrapper
+{
+    transition-delay: 2s;
+}
+
+.our_entertainment
+{
+    transition-delay: 3s;
+}
+
+.to_book_wrapper
+{
+    transition-delay: 4s;
+}
+
+.footer
+{
+    transition-delay: 5s;
+}
+
+.loaded .header,
+.loaded .home_wrapper,
+.loaded .our_entertainment,
+.loaded .to_book_wrapper,
+.loaded .footer
+{
+    opacity: 1;
+}
